@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="25" height="20" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="terrain_atlas" tilewidth="32" tileheight="32">
+  <image source="../YetAnotherRPG/terrain_atlas.png" width="1024" height="1024"/>
+  <terraintypes>
+   <terrain name="Dirt" tile="-1"/>
+   <terrain name="Water" tile="-1"/>
+  </terraintypes>
+  <tile id="16" terrain="0,0,0,"/>
+  <tile id="17" terrain="0,0,,0"/>
+  <tile id="48" terrain="0,,0,0"/>
+  <tile id="49" terrain=",0,0,0"/>
+  <tile id="79" terrain=",,,0"/>
+  <tile id="80" terrain=",,0,0"/>
+  <tile id="81" terrain=",,0,"/>
+  <tile id="111" terrain=",0,,0"/>
+  <tile id="112" terrain="0,0,0,0"/>
+  <tile id="113" terrain="0,,0,"/>
+  <tile id="143" terrain=",0,,"/>
+  <tile id="144" terrain="0,0,,"/>
+  <tile id="145" terrain="0,,,"/>
+  <tile id="295" terrain="1,1,1,"/>
+  <tile id="296" terrain="1,1,,1"/>
+  <tile id="327" terrain="1,,1,1"/>
+  <tile id="328" terrain=",1,1,1"/>
+  <tile id="358" terrain=",,,1"/>
+  <tile id="359" terrain=",,1,1"/>
+  <tile id="360" terrain=",,1,"/>
+  <tile id="390" terrain=",1,,1"/>
+  <tile id="391" terrain="1,1,1,1"/>
+  <tile id="392" terrain="1,,1,"/>
+  <tile id="422" terrain=",1,,"/>
+  <tile id="423" terrain="1,1,,"/>
+  <tile id="424" terrain="1,,,"/>
+ </tileset>
+ <tileset firstgid="1025" name="collision-sprite" tilewidth="32" tileheight="32">
+  <image source="../YetAnotherRPG/collision-sprite.png" width="32" height="32"/>
+  <tile id="0">
+   <objectgroup draworder="index">
+    <object id="0" x="0.0434783" y="0.0434783" width="31.8696" height="31.8696"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <layer name="Grass" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJwrZ2BgKB/Fo3gUj+JRPIpH8ZDGAPPL6G0=
+  </data>
+ </layer>
+ <layer name="Path" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztlNENgCAQQ11BN8FJxEnUScCJPT4uaZpTA+Hij03ep21akGGo1ybsxNHg83VGEibnjCLsMgqnQwZ28eig0i5eGYswO2UU7wj+PTMs757njbswQVgd/TEnAjWZ7F92yQD/h9xN97Vyre2t3dNDZqDvuWvruVpvzBu6Tc294W75xlPp9QZ5eP5q1wUCOjvo
+  </data>
+ </layer>
+ <layer name="Water" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzrYGRg6ABiDyDOAOJMIKY2WMEIwZpQuzqBWJ3K9rhDzVsOtQfmH1r5qR3qlw4aht9yRsywg4UfLQCyfStpZMcoGAWjYBSMAtoAAODSESg=
+  </data>
+ </layer>
+ <layer name="Debris" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzdlVEOgzAIhl095DzJssN4iOlD23iBHWWv2/NepklJkEGB+rLsS0xrpT+IULvud4jC+rxek8Fe2g9cT+6QTPvvfZueFG8tzkfxlRS7hObnoPu+MFpL2NsO5Z5+C6yV5ZC+4HxayWQEaE488VBeQnxHNAGtVi3cDLojqk0ad2TqYoPrNS9JN/kLcE6TsC4xo7kn59bccvXRqgVIfafZA1t95rD37e2FSEa6XqP2vvSZ1P/Y1pK/jPrsWTRbz8y38q/5AIdTLbw=
+  </data>
+ </layer>
+ <layer name="TreeBase" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztlEkOgDAIRRtu6VUc7+F4Vb8LE4OlQLWufAmLhqkMbQjvUpFdV+PcQFqSbTgd9D1kEOy4/4jzBJnJ5n+wQLdCNrrHzPHX4H3w+lvgfSiBNruncVO957k9d7nGlXrPc8d2N4Vlptzmi5n9lOOt9yDtvXcHU0j7GdtBT105PfDUq/3Hkt5Tr/Z2Y/pSf+GJNPsdpNo4XQ==
+  </data>
+ </layer>
+ <layer name="TreeTop" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztVccNAjEQXLsLYh/ESoC+iH0Q++AIfRDFSGAJDd6zzX14MNI8vMEe2btrEZG2FemAXdBhbkQW4NI811X4amD9LYbRg68PDsAJ8qbgzHz6HLbwZeDuFePTkYcV8tbgxsTFazrysMfeB/CYcEYKrtj3Bt5NnD0WJ+SdwYvR347tQ8SOwHHkmSXklcGK1d+O7VxXITSQ1wRbVn87tnNd/fF70Oqb50YRaHXPcyOl1zhWq3ueGzHzU9PN9a3p1bT4+jo0a1mDO1PrQV9fh2YtawjdUaivfffCGlL/GEbqP/gNimh8AB3iT9g=
+  </data>
+ </layer>
+ <layer name="Collisions" width="25" height="20" opacity="0.43">
+  <data encoding="base64" compression="zlib">
+   eJxjZGFgYETDtALY7CHHPkJ60O1BV0+pH7GZT2n4keonapqNzR5KzaEVoJUbsJlLKN0MhvAgBPC5cSi4fxRAwGDOk7QApPiXmLJzsABq1D34zAIAVG8A+w==
+  </data>
+ </layer>
+</map>
