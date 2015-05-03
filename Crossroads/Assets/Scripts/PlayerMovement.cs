@@ -17,20 +17,19 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-		Vector2 v_movement = new Vector2(
-									Input.GetAxisRaw("Horizontal"), 
-									Input.GetAxisRaw("Vertical"));
+		float input_x = Input.GetAxisRaw("Horizontal");
+		float input_y = Input.GetAxisRaw("Vertical");
+		Vector2 movement_vector = new Vector2(input_x, input_y);
 
-		if (v_movement != Vector2.zero) {
+		if (movement_vector != Vector2.zero) {
 			anim.SetBool (IS_WALKING, true);
-			anim.SetFloat("input_x", v_movement.x);
-			anim.SetFloat("input_y", v_movement.y);
+			anim.SetFloat("input_x", input_x);
+			anim.SetFloat("input_y", input_y);
 		} else {
 			anim.SetBool(IS_WALKING, false);
 		}
 
-		rbody.MovePosition(rbody.position + v_movement * Time.deltaTime);
+		rbody.MovePosition(rbody.position + movement_vector.normalized * Time.deltaTime);
 
 	}
 }
