@@ -7,8 +7,6 @@ public class PlayerMovement : MonoBehaviour {
 	Rigidbody2D rbody;
 	Animator anim;
 
-	private bool isColliding = false;
-
 	// Use this for initialization
 	void Start () {
 		rbody = GetComponent<Rigidbody2D> ();
