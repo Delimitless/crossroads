@@ -1647,7 +1647,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 458918, guid: d8173aa5dff125642b6511df5f668989, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 441032, guid: d8173aa5dff125642b6511df5f668989, type: 2}
       propertyPath: m_RootOrder
@@ -1663,7 +1663,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 466538, guid: d8173aa5dff125642b6511df5f668989, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 415808, guid: d8173aa5dff125642b6511df5f668989, type: 2}
       propertyPath: m_RootOrder
@@ -1940,6 +1940,22 @@ Prefab:
     - target: {fileID: 6004048, guid: d8173aa5dff125642b6511df5f668989, type: 2}
       propertyPath: m_Points.m_Paths.Array.data[78].Array.data[1].y
       value: -3.13772011
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315902, guid: d8173aa5dff125642b6511df5f668989, type: 2}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336302, guid: d8173aa5dff125642b6511df5f668989, type: 2}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 132316, guid: d8173aa5dff125642b6511df5f668989, type: 2}
+      propertyPath: m_Name
+      value: River_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 101222, guid: d8173aa5dff125642b6511df5f668989, type: 2}
+      propertyPath: m_Name
+      value: RiverDebris_04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d8173aa5dff125642b6511df5f668989, type: 2}
