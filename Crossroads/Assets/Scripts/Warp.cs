@@ -7,18 +7,30 @@ public class Warp : MonoBehaviour {
 
 	public AudioClip exitAudio;
 	public AudioClip arrivalAudio;
+	AudioSource audioSource;
+
+	// Use this for initialization
+	void Start () {
+		audioSource = GetComponent<AudioSource> ();
+	}
 
 	IEnumerator OnTriggerEnter2D(Collider2D other) {
 		ScreenFader sf = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader> ();
 		AudioSource audioSource = GetComponent<AudioSource> ();
 
-		audioSource.PlayOneShot(exitAudio);
+		playAudioIfExists(exitAudio);
 		yield return StartCoroutine (sf.FadeToBlack());
 
 		warpToTargetLocation(other);
 
-		audioSource.PlayOneShot(arrivalAudio);
+		playAudioIfExists(arrivalAudio);
 		yield return StartCoroutine (sf.FadeToClear());
+	}
+
+	void playAudioIfExists(AudioClip clip) {
+		if(audioSource != null && clip != null) {
+			audioSource.PlayOneShot(clip);
+		}
 	}
 
 	void warpToTargetLocation(Collider2D warpPassenger) {
