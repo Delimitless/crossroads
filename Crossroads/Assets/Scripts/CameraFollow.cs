@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CameraFollow : MonoBehaviour {
 	const float CAMERA_ZOOM_SCALE = 4f;
-	const float CAMERA_FOLLOW_RATE = 0.075f;
+	const float CAMERA_FOLLOW_RATE = 0.1f;
 
 	public Transform target;
 	Camera cam;
