@@ -302,6 +302,7 @@ GameObject:
   - 4: {fileID: 348491955}
   - 61: {fileID: 348491957}
   - 114: {fileID: 348491956}
+  - 82: {fileID: 348491958}
   m_Layer: 0
   m_Name: DoorOutside
   m_TagString: Untagged
@@ -333,6 +334,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warpTarget: {fileID: 1290521605}
+  exitAudio: {fileID: 8300000, guid: bd4ef6fcea19f864b8e404437a2ac4ac, type: 3}
+  arrivalAudio: {fileID: 8300000, guid: be1f16e4ca212dc49a7e2d3b0cf77b82, type: 3}
 --- !u!61 &348491957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -346,6 +349,75 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!82 &348491958
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 348491954}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &352725361
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1653,7 @@ GameObject:
   - 4: {fileID: 927350826}
   - 61: {fileID: 927350828}
   - 114: {fileID: 927350827}
+  - 82: {fileID: 927350829}
   m_Layer: 0
   m_Name: DoorInside
   m_TagString: Untagged
@@ -1612,6 +1685,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warpTarget: {fileID: 49856286}
+  exitAudio: {fileID: 8300000, guid: bd4ef6fcea19f864b8e404437a2ac4ac, type: 3}
+  arrivalAudio: {fileID: 8300000, guid: be1f16e4ca212dc49a7e2d3b0cf77b82, type: 3}
 --- !u!61 &927350828
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1625,6 +1700,75 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: .579999983, y: 1}
+--- !u!82 &927350829
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 927350825}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &965189524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,6 +1881,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warpTarget: {fileID: 965189525}
+  exitAudio: {fileID: 0}
+  arrivalAudio: {fileID: 0}
 --- !u!61 &1454418298
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3213,6 +3359,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warpTarget: {fileID: 1834105313}
+  exitAudio: {fileID: 0}
+  arrivalAudio: {fileID: 0}
 --- !u!61 &2130153093
 BoxCollider2D:
   m_ObjectHideFlags: 0
