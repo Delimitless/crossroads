@@ -16,7 +16,6 @@ public class Warp : MonoBehaviour {
 
 	IEnumerator OnTriggerEnter2D(Collider2D other) {
 		ScreenFader sf = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader> ();
-		AudioSource audioSource = GetComponent<AudioSource> ();
 
 		playAudioIfExists(exitAudio);
 		yield return StartCoroutine (sf.FadeToBlack());
